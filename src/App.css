@@ -22,6 +22,45 @@ img {
   margin-bottom: 10px;
 }
 
+.buttons {
+  a {
+    color: #2a42f7;
+    margin: 0 5px;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+}
+
+.about {
+  padding: 20px;
+}
+
+.interest {
+  padding: 20px;
+  background-color: #f2f2f2;
+
+  h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #ddd;
+  font-size: 0.8em;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
