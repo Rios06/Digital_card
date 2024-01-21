@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+![](https://github.com/Rios06/Digital_card/blob/main/Dark.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
