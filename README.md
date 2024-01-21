@@ -1,4 +1,4 @@
-#Digital Card
+<h1>Digital Card</h1>
 
 ![](https://github.com/Rios06/Digital_card/blob/main/Dark.png)
 <p>
@@ -6,16 +6,16 @@
   Here are the quick steps to understand and run the card in your own environment.
 </p>
 
-####Install dependencies:
+<h3>Install dependencies:</h3>
 <h6>
   Make sure you have Node.js installed on your machine and have created a react project
 </h6>
 
-**Open your terminal and run:**
+<h4>Open your terminal and run:</h4>
 
-1. ```bash
+```bash
 npm install
 ```
-2. ```bash
+```bash
 npm start
 ```
