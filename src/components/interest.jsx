@@ -1,8 +1,10 @@
+//About component to show personal interests
 import React from 'react';
 
 const Interest = () => {
   return (
     <div className="interest">
+        {/* Displaying personal interests */}
       <h2>Interest</h2>
       <p>In my free time I immerse myself in drawing as a form of creative expression.
          Additionally, ting, particularly iI find software development fascinan the web domain.
