@@ -1,4 +1,4 @@
-//About component to show personal interests
+// Interest component for displaying personal interests
 import React from 'react';
 
 const Interest = () => {
