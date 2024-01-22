@@ -1,10 +1,11 @@
+/* Reset for margins and paddings */
 * {
   margin: 0;
   padding: 0;
 
 }
 
-
+/* General styles for the application */
 .App {
   font-family: 'Arial', sans-serif;
   display: flex;
@@ -12,10 +13,12 @@
   justify-content: center;
 }
 
+/* Styles for the dark theme */
 .App.dark-theme {
   background-color: rgb(16, 16, 16);
 }
 
+/* Styles for the card container */
 .card-container {
   background-image: url(./assets/12.png);
   background-size: cover;
@@ -30,6 +33,7 @@
   align-items: center;
 }
 
+/* Styles for the main page container */
 .page-container {
   display: flex;
   flex-direction: column;
@@ -37,40 +41,48 @@
   min-height: 100vh;
 }
 
+/* Additional styles for the dark theme in the card */
 .card-container.dark-mode {
   background-image: url(./assets/dark.png);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   
 }
+
+/* Styles specific to headers in the dark theme */
 .card-container.dark-mode h2 {
   font-family: Arial, Helvetica, sans-serif;
   color: #2e2e2e;
   font-weight: bold;
 }
+
 .card-container.dark-mode h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: #2e2e2e;
   font-weight: bold;
 }
+
 .card-container.dark-mode h3 {
   font-family: Arial, Helvetica, sans-serif;
   color: #2e2e2e;
   font-weight: bold;
 }
 
+/* Styles for paragraphs in the dark theme */
 .card-container.dark-mode p {
   font-family: Arial, Helvetica, sans-serif;
   color: #2e2e2e;
   font-weight: bold; 
 }
 
+/* Styles for the application header */
 .App-header {
   color: #c6c6c6;
   text-align: center;
   padding: 20px;
 }
 
+/* Styles for images */
 img {
   width: 250px;
   height: 250px;
@@ -79,12 +91,14 @@ img {
   margin-bottom: 10px;
 }
 
+/* Styles for buttons */
 .buttons {
   display: flex;
   justify-content: center;
   margin-top: 15px;
 }
 
+/* Styles for buttons */
 .buttons a {
   display: inline-block;
   padding: 10px 40px;
@@ -98,16 +112,18 @@ img {
   transition: background-color 0.3s, color 0.3s;
 }
 
+/* Hover effect for buttons */
 .buttons a:hover {
   background-color: #111df6; 
   color: #f6f8fd;
 }
 
+/* Shared styles for About and Interest sections */
 .about,
 .interest {
   padding: 20px;
   margin-bottom: 10px; 
-
+/* Styles specific to headers in About and Interest sections */
   h2, h3 {
     font-size: 1.2em;
     margin-bottom: 6px;
@@ -119,19 +135,22 @@ img {
     color: #3772ff;
   }
   
+  /* Styles for the list in About and Interest sections */
   ul {
     list-style-type: none;
     padding: 0;
-    
+    /* Styles for list items in About and Interest sections */
     li {
       margin-bottom: 5px;
     }
   }
 }
+/* Adjustment for the Interest section on mobile devices */
 .interest h2 {
   margin-top: -30px; 
 } 
 
+/* Styles for the footer */
 .footer {
   color: #f1f1f1;
   padding: 10px 24px;
@@ -143,6 +162,7 @@ img {
 
 }
 
+/* Styles for social icons in the footer */
 .social-icons {
   display: flex;
   justify-content: center;
@@ -159,61 +179,67 @@ img {
   justify-content: center;
   align-items: center;
   width: 50px;
-  height: 50px; /* Ajusta el tamaño del círculo según sea necesario */
-  background-color: #3772ff; /* Color del fondo circular */
-  border-radius: 50%; /* Hace que el fondo(borde) sea circular */
-  text-decoration: none; /* Elimina la subrayado predeterminado en los enlaces */
+  height: 50px; 
+  background-color: #3772ff; 
+  border-radius: 50%; 
+  text-decoration: none; 
+  
 }
 
+/* Hover effect for social icons */
 .social-icons a:hover {
   color: #303aff;
 }
 
+/* Media queries for mobile devices */
 @media only screen and (max-width: 600px) {
   .App-header {
     padding: 10px; 
   }
-
+/* Adjustments for images on mobile devices */
   img {
     width: 150px; 
     height: 150px;
   }
-
+/* Adjustments for buttons on mobile devices */
   .buttons a {
     padding: 8px 20px;
     font-size: 1em; 
   }
-
+ /* Adjustments for About and Interest sections on mobile devices */
   .about,
   .interest {
     padding: 10px; 
   }
-
+/* Adjustments for the footer on mobile devices */
   .footer {
     padding: 5px; 
     color: #191919;
   }
 }
 
+/* Media queries for devices with a width greater than 600px */
 @media only screen and (min-width: 601px) {
+  /* Adjustments for the card container on larger screens */
   .card-container {
     max-width: 400px; 
   }
-
+/* Adjustments for buttons on larger screens */
   .buttons a {
-    padding: 10px 40px; /* Ajustar el padding en botones para pantallas más grandes */
+    padding: 10px 40px; 
     font-size: 1.2em;
   }
 }
 
+/* Styles for the theme switch */
 .react-switch {
   position: fixed;
   top: 10px;
   right: 10px;
-  z-index: 999; /* Asegura que el interruptor esté sobre otros elementos */
+  z-index: 999; 
 }
 
-/* Ajustes para dispositivos móviles */
+/* Mobile adjustments for the theme switch */
 @media only screen and (max-width: 600px) {
   .react-switch {
     position: fixed;
