@@ -1,15 +1,72 @@
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
+* {
   margin: 0;
   padding: 0;
+
+}
+
+
+.App {
+  font-family: 'Arial', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.App.dark-theme {
+  background-color: rgb(16, 16, 16);
+}
+
+.card-container {
+  background-image: url(./assets/12.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 100vh;
 }
 
-.info {
+.card-container.dark-mode {
+  background-image: url(./assets/dark.png);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  
+}
+.card-container.dark-mode h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2e2e2e;
+  font-weight: bold;
+}
+.card-container.dark-mode h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2e2e2e;
+  font-weight: bold;
+}
+.card-container.dark-mode h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2e2e2e;
+  font-weight: bold;
+}
+
+.card-container.dark-mode p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2e2e2e;
+  font-weight: bold; 
+}
+
+.App-header {
+  color: #c6c6c6;
   text-align: center;
   padding: 20px;
 }
@@ -23,49 +80,144 @@ img {
 }
 
 .buttons {
-  a {
-    color: #2a42f7;
-    margin: 0 5px;
-    font-size: 1.2em;
-    text-decoration: none;
-  }
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 
-.about {
-  padding: 20px;
+.buttons a {
+  display: inline-block;
+  padding: 10px 40px;
+  margin: 0 5px;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  color: #fff; 
+  background-color: #3772ff; 
+  transition: background-color 0.3s, color 0.3s;
 }
 
+.buttons a:hover {
+  background-color: #111df6; 
+  color: #f6f8fd;
+}
+
+.about,
 .interest {
   padding: 20px;
-  background-color: #f2f2f2;
+  margin-bottom: 10px; 
 
-  h2 {
+  h2, h3 {
     font-size: 1.2em;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
 
+  h3 span {
+    font-size: 1.2em;
+    margin-bottom: 6px;
+    color: #3772ff;
+  }
+  
   ul {
     list-style-type: none;
     padding: 0;
-
+    
     li {
       margin-bottom: 5px;
     }
   }
 }
+.interest h2 {
+  margin-top: -30px; 
+} 
 
 .footer {
-  padding: 10px;
-  text-align: center;
-  background-color: #ddd;
-  font-size: 0.8em;
+  color: #f1f1f1;
+  padding: 10px 24px;
+  display:flex;
+  width: 100%;
+  margin-left: -6%;
+  margin-bottom: -6%;
+  background-color: #3772ff;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.social-icons a {
+  margin: 0 4px; 
+  color: #f1f1f1;
+  font-size: 2.0em;
+  transition: color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px; /* Ajusta el tamaño del círculo según sea necesario */
+  background-color: #3772ff; /* Color del fondo circular */
+  border-radius: 50%; /* Hace que el fondo(borde) sea circular */
+  text-decoration: none; /* Elimina la subrayado predeterminado en los enlaces */
+}
+
+.social-icons a:hover {
+  color: #303aff;
+}
+
+@media only screen and (max-width: 600px) {
+  .App-header {
+    padding: 10px; 
   }
-  to {
-    transform: rotate(360deg);
+
+  img {
+    width: 150px; 
+    height: 150px;
+  }
+
+  .buttons a {
+    padding: 8px 20px;
+    font-size: 1em; 
+  }
+
+  .about,
+  .interest {
+    padding: 10px; 
+  }
+
+  .footer {
+    padding: 5px; 
+    color: #191919;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .card-container {
+    max-width: 400px; 
+  }
+
+  .buttons a {
+    padding: 10px 40px; /* Ajustar el padding en botones para pantallas más grandes */
+    font-size: 1.2em;
+  }
+}
+
+.react-switch {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999; /* Asegura que el interruptor esté sobre otros elementos */
+}
+
+/* Ajustes para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  .react-switch {
+    position: fixed;
+    top: 10px;
+    right: 10px;
   }
 }

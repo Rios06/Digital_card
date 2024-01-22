@@ -1,11 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/fontawesome-free-brands';
-import fotoP from "../assets/fotoPerfil.png"; 
+
+import fotoP from "../assets/profile-photo.png"; 
 const Info = () => {
   return (
     <div className="info">
-      <img src={fotoP} alt="Fotodeperfil" className="fotoPerfil" />
+      <img src={fotoP} alt="Profilephoto" className="profilephoto" />
       <h1>Jennifer Rios</h1>
       <div className="buttons">
         <a href="https://github.com/Rios06" target="_blank" rel="noopener noreferrer">

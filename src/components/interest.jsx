@@ -4,10 +4,10 @@ const Interest = () => {
   return (
     <div className="interest">
       <h2>Interest</h2>
-      <p>En mis momentos libres, me sumerjo en el dibujo como una forma de expresión creativa.
-        Además, encuentro fascinante el desarrollo de software, especialmente en el ámbito web.
-        Mi pasión por la resolución de problemas me impulsa a buscar soluciones innovadoras y
-        eficientes en cada proyecto que emprendo</p>
+      <p>In my free time I immerse myself in drawing as a form of creative expression.
+         Additionally, ting, particularly iI find software development fascinan the web domain.
+          My passion for problem solving drives me to seek innovative and efficient solutions
+           in every project I undertake.</p>
     </div>
   );
 };
